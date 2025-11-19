@@ -24,10 +24,31 @@
 }
 
 #content {
-	background-image: url("../static/image.jpg");
-	background-color: #181818;
-	font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  background-image: url("../static/image.jpg");
+  background-color: #181818;
+  font-family: 'Noto Sans JP', sans-serif;
+
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
+
+#content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* adjust for more/less darkness */
+  z-index: 0;
+}
+
+#content > * {
+  position: relative;
+  z-index: 1; /* ensures text sits above the overlay */
+}
+
+
 
 #details {
 	margin-left: 50px;
