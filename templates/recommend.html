@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>NEW</title>
+	<title>{{title}} | Movie Recommendations</title>
+	<meta name="description" content="View details and recommendations for {{title}}">
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -81,10 +82,10 @@
   {% endfor %}
   
   {% if casts|length > 1 %}
-  <div class="movie" style="color: #E8E8E8;">
+  <div class="movie" style="padding: 2rem 0;">
     	<center>
-		<h3>TOP CAST</h3>
-		<h5>(Click on the cast to know more)</h5>
+		<h3>⭐ Top Cast</h3>
+		<h5 style="opacity: 0.8;">Click on any cast member to learn more</h5>
 	</center>
   </div>
 
@@ -110,7 +111,7 @@
 
   <center>
     {% if reviews %}
-    <h2 style="color:white">USER REVIEWS</h2>
+    <h2 style="color:white; margin-top: 3rem;">💬 User Reviews</h2>
      <div class="col-md-12" style="margin: 0 auto; margin-top:25px;">
         <table class="table table-bordered" bordercolor="white" style="color:white">
             <thead>
@@ -148,8 +149,11 @@
       {% if movie_cards|length > 1 %}
 
 
-      <div class="movie" style="color: #E8E8E8;">
-      <center><h3>RECOMMENDED MOVIES FOR YOU</h3><h5>(Click any of the movies to get recommendation)</h5></center>
+      <div class="movie" style="padding: 3rem 0;">
+      <center>
+        <h3>🎥 Recommended Movies For You</h3>
+        <h5 style="opacity: 0.8;">Click any movie to get personalized recommendations</h5>
+      </center>
     </div>
 
     <div class="movie-content">

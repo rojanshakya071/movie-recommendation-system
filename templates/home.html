@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Movie Recommendation System</title>
+  <title>Movie Recommendation System | Find Your Next Favorite Film</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Discover personalized movie recommendations powered by AI. Find your next favorite film based on your preferences.">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
@@ -26,16 +27,18 @@
 
 <body id="content" style="font-family: 'Noto Sans JP', sans-serif;">
 
-	<div class="ml-container" style="display: block;">
-		
-    <center><h1 style=""> Movie Recommendation System</h1></center>
-    <div class="form-group shadow-textarea" style="margin-top: 30px;text-align: center;color: white;">
+	<div class="ml-container">
+    <center>
+      <h1>Discover Your Next Favorite Movie</h1>
+    </center>
+    
+      <div class="form-group " style="margin-top: 30px;text-align: center;color: white;">
         <input type="text" name="movie" class="movie form-control" id="autoComplete" autocomplete="off" placeholder="Enter the Movie Name" style="background-color: #ffffff;border-color:#ffffff;width: 60%;color: #181818" required="required" />
-        <br>
+    
     </div>
 
     <div class="form-group" style="text-align: center;">
-      <button class="btn btn-primary btn-block movie-button" style="background-color: #22AED1;text-align: center;border-color: #22AED1;width:120px;" disabled="true" >Enter</button><br><br>
+      <button class="btn btn-primary movie-button" disabled="true">Search</button>
     </div>
 	</div>
 
@@ -43,8 +46,10 @@
   </div>
   
   <div class="fail">
-    <center><h3>Sorry! The movie you requested is not in our database. 
-    Please check the spelling or try with other movies!</h3></center>
+    <center>
+      <h3>🎬 Movie Not Found</h3>
+      <p style="opacity: 0.8; margin-top: 1rem;">The movie you requested is not in our database. Please check the spelling or try another movie!</p>
+    </center>
   </div>
 
 	<div class="results">
